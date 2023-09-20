@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "example_package_20laique23"
-version = "2023.0.0.3"
+version = "2023.0.0.1"
 authors = [{name="Laique Djeutchouang", email="ldjeutchouang@aims.ac.tz"}, ]
 description = "A small example of packaging Python Projects"
 readme = "README.md"
@@ -14,6 +14,6 @@ classifiers = ["Programming Language :: Python :: 3",
                "Operating System :: OS Independent", ]
 
 [project.urls]
-"Homepage" = "https://github.com/Djeutsch/pypackagingproject"
-"Bug Tracker" = "https://github.com/Djeutsch/pypackagingproject/issues"
+"Homepage" = "https://github.com/Djeutsch/Age-Calculator"
+"Bug Tracker" = "https://github.com/Djeutsch/Age-Calculator/issues"
 
