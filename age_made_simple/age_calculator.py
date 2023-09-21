@@ -4,7 +4,7 @@ class AgeCalculator:
     """
     This program calculates a person's age based on their date of birth and return the day of the week they were born. 
     """
-    def __init__(self, date_of_birth: str):
+    def __init__(self, date_of_birth: str) -> None:
         """
         Args:
             date_of_birth (str): use this format YYYY-MM-DD.
@@ -15,7 +15,12 @@ class AgeCalculator:
         except ValueError:
             print("Invalid date of birth format. Please use this format: 'YYYY-MM-DD'.")
 
-    def calculate_age(self):
+    def calculate_age(self) -> int:
+        """
+        Calculate the age based on the provided date of birth.
+        Returns:
+            int: the calculated age.
+        """
         # Get the current date
         current_date = datetime.now()
         
@@ -24,7 +29,12 @@ class AgeCalculator:
         
         return age
 
-    def day_of_week(self):
+    def day_of_week(self) -> str:
+        """
+        Determine the day of the week the person was born based on the provided date of birth.
+        Returns:
+            str: the day of the week the person was born.
+        """
         # Get the day of the week as an integer (0 = Monday, 6 = Sunday)
         day_index = self.date_of_birth.weekday()
 
@@ -36,7 +46,10 @@ class AgeCalculator:
 
         return day_name
     
-    def get_birth_details(self):
+    def get_birth_details(self) -> None:
+        """
+        Display both the calculated age based on the provided date of birth and return the day of the week the person was born.
+        """
         # Calculate age and day of the week
         age = self.calculate_age()
         day_name = self.day_of_week()
