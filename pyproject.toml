@@ -3,8 +3,8 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry]
-name = "age_made_simple"
-version = "2023.0.0.1"
+name = "age-made-simple"
+version = "0.1.0"
 authors = ["Laique Djeutchouang <ldjeutchouang@aims.ac.tz>", ]
 description = "A Python package to calculate a person's age based on their date of birth and return the day of the week they were born."
 readme = "README.md"
@@ -12,6 +12,7 @@ classifiers = ["Programming Language :: Python :: 3",
                "License :: OSI Approved :: MIT License",
                "Operating System :: OS Independent", ]
 
+packages = [{include = "age_made_simple"}]
 repository = "https://github.com/Djeutsch/Age-Calculator"
 
 [tool.poetry.dependencies]
